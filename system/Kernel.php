@@ -1,4 +1,9 @@
 <?php
+/**
+* Author: Vinay Khobragade
+* Package: Surface Kernel
+* Contact me for fixes and suggestions
+*/
 
 namespace system;
 
@@ -12,7 +17,7 @@ class Kernel
 
 	public function __construct()
 	{
-		//Kernel Connected !!!!!!!!! :p
+		//Kernel Connected
 
 		$routes = new \app\routes\Routes;
 
@@ -32,21 +37,12 @@ class Kernel
 			$this->runTheController($this->routes[$this->currentRequest]['uses'], $params);
 
 		}
+		else {
+			echo '<h1>404 Error. <small>Page not found</small></h1>';
+		}
 
 		
 	}
-
-	// private function runTheMiddleWare($middleware)
-	// {
-	// 	try {
-	// 		$middlewareName = $middleware.'Middleware';
-	// 		$middlewareClass = '\app\middlewares\\'.$middlewareName;
-	// 		$middlewareObj->$middlewareName = new $middlewareClass; 
-	// 	}
-	// 	catch(Exception $e) {
-
-	// 	}
-	// }
 
 	private function runTheController($string, $params=array())
 	{
@@ -80,18 +76,6 @@ class Kernel
 		return $methodName;
 	}
 
-
-	public function setRoutes()
-	{
-		// $this->routes = [
-		// 	'/' => ['uses' => 'HomePage@index'],
-		// 	'contact-us' => ['uses' => 'ContactUs@index'],
-		// 	'captacha-generate' => ['uses' => 'ContactUs@captacha'],
-		// 	'news' => ['uses' => 'News@index', 
-		// 				'params' => ['title' => $this->getUriSegment(1)] ],
-		// ];
-
-	}
 
 	public function getUriSegment($int=0)
 	{
