@@ -38,7 +38,7 @@ class Kernel
 
 		}
 		else {
-			echo '<h1>404 Error. <small>Page not found</small></h1>';
+			return view('error_404.tpl');
 		}
 
 		
