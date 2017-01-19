@@ -6,15 +6,15 @@
     body {
       padding: 0;
       margin: 0;
-      color: #777;
+      background-color: #eee;
     }
     h2 {
-      color #999;
+      color: #000;
     }
   </style>
 </head>
 <body>
-  <h2 style="text-align: center; padding: 15%;">404 Page Not Found. <small>Powered by Surface Framework.
+  <h2 style="text-align: center; padding: 15%;">404 Page Not Found. <br/><small>Powered by Surface Framework.
   </small></h2>
 </body>
 </html>
