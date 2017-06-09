@@ -1,5 +1,5 @@
 # Surface
-MicroFramework.
+Surface is simple, light-weight, MVC based framework written in PHP to provide a faster, secure and efficent way to build websites.
 
 # Installation
 Download the files, and extract them in your website (in root folder).
