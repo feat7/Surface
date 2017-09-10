@@ -9,3 +9,9 @@ Open your website and follow user guide.
 I will make the installation procedure easier and more convenient.
 Create issue if you face any problem regarding installation.
 Router will be very robust and flexible in next version.
+
+# To Do
+- New Router
+- Security Checks
+- Elqouent
+- Command Line Interface tool
