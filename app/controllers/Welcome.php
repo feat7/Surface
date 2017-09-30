@@ -2,11 +2,12 @@
 
 namespace app\controllers;
 
-use \system\controllers\Controller;
+use system\controllers\Controller;
+use app\models\User;
 
 
 /**
-* 
+* Welcome Controller
 */
 class Welcome extends Controller
 {

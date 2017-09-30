@@ -9,11 +9,9 @@ class Routes
 	{
 		$this->routes = [
 			'/' => ['uses' => 'Welcome@welcomeToSurface'],
-
 		];
 
 		return $this->routes;
-
 	}
 
 	public function getUriSegment($int=0)
