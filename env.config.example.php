@@ -3,7 +3,17 @@
      * Environment Configuration file
      */
 
-    const DB_NAME = 'database name';
-	const DB_USER = 'database username';
-	const DB_PASS = 'database password';
-	const DB_HOST = 'localhost';
+    /**
+     * App Mode
+     * __DEV__ | __PRODUCTION__
+     */
+
+    const APP_MODE = '__DEV__';
+
+    /**
+     * Database Config
+     */
+    const DB_NAME = 'dbname';
+    const DB_USER = 'root';
+    const DB_PASS = 'secret';
+    const DB_HOST = 'localhost';
