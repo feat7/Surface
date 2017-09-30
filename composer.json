@@ -1,5 +1,12 @@
 {
     "require": {
-        "twig/twig": "^1.27"
-    }
+        "twig/twig": "^1.27",
+        "illuminate/database": "^5.4",
+        "illuminate/events": "^5.4",
+        "phpmailer/phpmailer": "^5.2",
+        "spipu/html2pdf": "^5.0"
+    },
+    "config": {
+        "secure-http": false
+    }    
 }

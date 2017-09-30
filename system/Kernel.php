@@ -1,8 +1,8 @@
 <?php
 /**
 * Author: Vinay Khobragade
-* Package: Surface Kernel
-* Contact me for fixes and suggestions
+* Package: Backend for Aavartan
+* Help me with fixes and suggestions
 */
 
 namespace system;
@@ -12,7 +12,7 @@ class Kernel
 {
 
 
-	//This is main Kernel Layer of Surface Framework
+	//This is main Kernel Layer
 
 
 	public function __construct()
