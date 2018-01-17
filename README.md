@@ -14,7 +14,7 @@ Surface is simple, light-weight, MVC based framework written in PHP to provide a
 # Installation
 ## On Linux (Ubuntu/Debian based)
 1. Install ```LAMP``` stack on your PC.
-2. Install [https://github.com/RoverWire/virtualhost](virtualhost) bash script.
+2. Install [virtualhost](https://github.com/RoverWire/virtualhost) bash script.
 3. Create a virtualhost as per given in above link.
 4. ```cd /var/www/```
 5. Delete the folder created by your virtualhost. Please note the name of the folder before deleting.
@@ -37,3 +37,10 @@ Router will be very robust and flexible in next version.
 - SHELL to debug
 - PHPUnit for unit tests
 - suggest more..
+
+# Contribution
+Please create issue first if you're planning to contribute.
+
+# LICENSE
+The MIT LICENSE.
+See [LICENSE](LICENSE) for more.
