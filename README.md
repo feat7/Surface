@@ -12,7 +12,7 @@ Surface is simple, light-weight, MVC based framework written in PHP to provide a
 - Easy integration with 3rd party packages
 
 # Installation
-## Recommended way (Works both on Linux and Windows
+## Recommended way (Works on Linux, Windows and MacOS)
 ```
 git clone https://github.com/feat7/Surface.git <app-name>
 cd <app-name>
