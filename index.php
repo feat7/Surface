@@ -11,6 +11,9 @@
 use \app\config\Config;
 use Illuminate\Database\Capsule\Manager as Capsule;
 
+if(!file_exists(__DIR__ . "/env.config.php")){
+    exit("Environment file not found. Please coyp env.config.example.php to env.config.php or see the documentation for more details");
+}
 require_once 'env.config.php';
 
 if(APP_MODE == '__DEV__')
