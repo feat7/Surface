@@ -51,6 +51,7 @@ Router will be very robust and flexible in next version.
 - Migrations from CLI
 - SHELL to debug
 - PHPUnit for unit tests
+- Docker implementation.
 - suggest more..
 
 # Contribution
