@@ -1,0 +1,48 @@
+#!/usr/bin/env php
+<?php
+
+use \app\config\Config;
+
+require_once 'env.config.php';
+use Illuminate\Database\Capsule\Manager as Capsule;
+
+/**
+ * @Implementing Autoloader with two base namespaces.
+ */
+
+$loader = require 'vendor/autoload.php';
+$loader->add('system', __DIR__);
+$loader->add('app', __DIR__);
+
+/**
+ * @Let us eat a capsule to use eloquent
+ */
+
+$capsule = new Capsule;
+
+$capsule->addConnection([
+    'driver'    => 'mysql',
+    'host'      => DB_HOST,
+    'database'  => DB_NAME,
+    'username'  => DB_USER,
+    'password'  => DB_PASS,
+    'charset'   => 'utf8',  
+    'collation' => 'utf8_unicode_ci',
+    'prefix'    => '',
+]);
+
+// Set the event dispatcher used by Eloquent models... (optional)
+use Illuminate\Events\Dispatcher;
+use Illuminate\Container\Container;
+$capsule->setEventDispatcher(new Dispatcher(new Container));
+
+// Make this Capsule instance available globally via static methods... (optional)
+$capsule->setAsGlobal();
+
+// Setup the Eloquent ORM... (optional; unless you've used setEventDispatcher())
+$capsule->bootEloquent(); //eloquent boot done
+
+// Run the command
+use system\console\Command; 
+
+$command = new Command($argv); 
