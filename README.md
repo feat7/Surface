@@ -1,5 +1,5 @@
 # Surface
-Surface is simple, light-weight, MVC based framework written in PHP to provide a faster, secure and efficent way to build websites.
+Surface is simple, light-weight, MVC based framework written in PHP to provide a faster, secure and efficient way to build websites.
 
 # Features
 - Object Relational Mapper used - Eloquent
